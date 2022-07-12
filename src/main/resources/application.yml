@@ -10,4 +10,9 @@ spring:
     name: springboot-demo
   profiles:
     active: dev
+    include:
+      #- redis-standalone  #单机
+      - redis-sentinel    #哨兵
+      #- redis-cluster     #集群
+
 
